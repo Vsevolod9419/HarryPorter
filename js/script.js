@@ -33,10 +33,27 @@ house.className = 'infoHero'
 wand.className = 'infoHero'
 alive.className = 'infoHero'
 
-
-
-
 cards.append(card)
 }
 
 data.forEach(createCard)
+
+let input = document.querySelector('input')
+input.addEventListener('input', search)
+
+let select = document.querySelector('#select')
+select.addEventListener('change', search)
+
+
+function search(e) {
+	// let select = e.target.value
+	let filterHero = data.filter(e => e.house.trim().toLowerCase().includes(select.value.toLowerCase())).filter((e) => e.name.toLowerCase().trim().includes(input.value))
+	cards.innerHTML = ''
+	filterHero.forEach(createCard)
+	console.log(select.value);
+}
+
+
+
+
+
