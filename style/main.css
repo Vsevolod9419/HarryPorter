@@ -2,15 +2,13 @@
 	padding: 40px 0;
 }
 
-
 .cards {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
-
-.article {
+.cardHero {
 	height: 409px;
 	width: 334px;
 	background: #FFFFFF;
@@ -20,7 +18,7 @@
 	overflow: hidden;
 }
 
-.article__img {
+.fotoHero {
 	display: block;
 	height: 192px;
 	width: 334px;
@@ -28,12 +26,8 @@
 	object-position: center -100px
 }
 
-.articleText__wrapper {
-	padding: 24px
-}
-
-.article__name {
-	font-family: 'Inter';
+.nameHero {
+	margin-top: 24px;
 	font-style: normal;
 	font-weight: 800;
 	font-size: 20px;
@@ -41,12 +35,7 @@
 	color: #152536;
 }
 
-.article__actor,
-.article__gender,
-.article__house,
-.article__wand,
-.article__alive {
-	font-family: 'Inter';
+.infoHero {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
